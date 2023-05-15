@@ -26,20 +26,20 @@
 
             try
             {
-                string str = "NotANumber";
-                int number = int.Parse(str);
+                try
+                {
+                    string str = "NotANumber";
+                    int number = int.Parse(str);
+                }
+                catch (FormatException ex)
+                {
+                    // Wrap the original exception in a custom exception.
+                    throw new CustomException("User input caused a FormatException.", ex);
+                }
             }
-            catch (FormatException ex)
-            {
-                // Wrap the original exception in a custom exception.
-                throw new CustomException("User input caused a FormatException.", ex);
-            }
-
             catch (CustomException ex)
             {
-                // This block will catch the custom exception and handle it.
-                Console.WriteLine("Caught exception: " + ex.Message);
-                Console.WriteLine("Inner exception: " + ex.InnerException?.Message);
+                Console.WriteLine("Caught custom exception: " + ex.Message);
             }
         }
     }

@@ -3,15 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33530.505
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeneralExceptions", "GeneralExceptions\GeneralExceptions.csproj", "{923C36E0-15D3-4E45-8876-295333F41844}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GeneralExceptions", "GeneralExceptions\GeneralExceptions.csproj", "{923C36E0-15D3-4E45-8876-295333F41844}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomExceptions", "CustomExceptions\CustomExceptions.csproj", "{236A563D-0596-42C7-B1D0-C1380B8CC818}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CustomExceptions", "CustomExceptions\CustomExceptions.csproj", "{236A563D-0596-42C7-B1D0-C1380B8CC818}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadingExceptions", "ThreadingExceptions\ThreadingExceptions.csproj", "{27F02690-7195-4B80-B152-172F26B2CE75}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ThreadingExceptions", "ThreadingExceptions\ThreadingExceptions.csproj", "{27F02690-7195-4B80-B152-172F26B2CE75}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InPackage", "InPackage\InPackage.csproj", "{5097806C-615A-41FC-A8A0-FB7FECA425C0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InPackage", "InPackage\InPackage.csproj", "{5097806C-615A-41FC-A8A0-FB7FECA425C0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BenchmarkException", "BenchmarkException\BenchmarkException.csproj", "{FEB58140-21A6-4054-AA9C-2B711852F04F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BenchmarkException", "BenchmarkException\BenchmarkException.csproj", "{FEB58140-21A6-4054-AA9C-2B711852F04F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpecialCases", "SpecialCases\SpecialCases.csproj", "{F7020261-5A93-4F88-B00C-7AD3BF9DF34F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,10 +37,14 @@ Global
 		{5097806C-615A-41FC-A8A0-FB7FECA425C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5097806C-615A-41FC-A8A0-FB7FECA425C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5097806C-615A-41FC-A8A0-FB7FECA425C0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{FEB58140-21A6-4054-AA9C-2B711852F04F}.Debug|Any CPU.ActiveCfg = Release|Any CPU
-		{FEB58140-21A6-4054-AA9C-2B711852F04F}.Debug|Any CPU.Build.0 = Release|Any CPU
+		{FEB58140-21A6-4054-AA9C-2B711852F04F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEB58140-21A6-4054-AA9C-2B711852F04F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FEB58140-21A6-4054-AA9C-2B711852F04F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FEB58140-21A6-4054-AA9C-2B711852F04F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7020261-5A93-4F88-B00C-7AD3BF9DF34F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7020261-5A93-4F88-B00C-7AD3BF9DF34F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7020261-5A93-4F88-B00C-7AD3BF9DF34F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7020261-5A93-4F88-B00C-7AD3BF9DF34F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

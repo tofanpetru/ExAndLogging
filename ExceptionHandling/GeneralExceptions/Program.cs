@@ -6,4 +6,6 @@ ExceptionExamples.CatchAllExceptions();
 ExceptionExamples.TryCatchFinally();
 ExceptionExamples.TryAndFinally();
 
+
+Console.WriteLine("End");
 Console.ReadLine();

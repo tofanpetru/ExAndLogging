@@ -25,16 +25,17 @@
             try
             {
                 // Some code that can throw multiple types of exceptions.
-                string? s = null;
-                s.ToString(); // This will throw a NullReferenceException.
+                int[] numbers = { 1, 2, 3 };
+                int index = 4;
+                int value = numbers[index]; // This will throw an IndexOutOfRangeException.
             }
-            catch (DivideByZeroException ex)
+            catch (IndexOutOfRangeException ex)
             {
-                Console.WriteLine("Caught divide by zero exception: " + ex.Message);
+                Console.WriteLine("Caught IndexOutOfRangeException: " + ex.Message);
             }
-            catch (NullReferenceException ex)
+            catch (Exception ex)
             {
-                Console.WriteLine("Caught null reference exception: " + ex.Message);
+                Console.WriteLine("Caught a general exception: " + ex.Message);
             }
         }
 
@@ -44,12 +45,14 @@
 
             try
             {
-                string? s = null;
-                s.ToString(); // This will throw a NullReferenceException.
+                // Some code that can throw multiple types of exceptions.
+                int[] numbers = { 1, 2, 3 };
+                int index = 4;
+                int value = numbers[index]; // This will throw an IndexOutOfRangeException.
             }
-            catch (Exception ex) // This block will catch any exception.
+            catch (Exception ex)
             {
-                Console.WriteLine("Caught exception: " + ex.Message);
+                Console.WriteLine("Caught a general exception: " + ex.Message);
             }
         }
 
@@ -80,11 +83,15 @@
 
             try
             {
-                string str = "NotANumber";
-
-                int number = int.Parse(str); // This will throw a FormatException.
-
-                Console.WriteLine("DROP DATABASE");
+                try
+                {
+                    throw new ArithmeticException();
+                }
+                catch
+                {
+                    /* Describe why all exceptions will be ignored */
+                    Console.WriteLine("Caught exception: ArithmeticException");
+                }
             }
             finally
             {
