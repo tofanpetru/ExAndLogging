@@ -1,6 +1,5 @@
 ﻿using SpecialCases;
 
-ExceptionExamples.CannotBeHandled();
-
+ExceptionExamples.CannotBeHandled();//+ InvalidOperationException, ThreadAbortException, AccessViolationException, OutOfMemoryException, BadImageFormatException and StackOverflowException
 Console.WriteLine("End");
 Console.ReadLine();
